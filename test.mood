@@ -1,0 +1,12 @@
+num 12 :=
+num print!
+
+0 10 <loop 
+    num print!
+/>
+
+soni soni == <then hello print! />
+
+array [] :=
+array 12 push!
+array print!

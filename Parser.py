@@ -178,9 +178,9 @@ class Parser(ParserHelper):
                 num1 = self.getTop().content
                 
                 res = int(num1) * int(num2)
-                newMultiplyToken = Token(num1 
+                newMultiplyToken = Token(str(num1) 
                                             + " * " 
-                                            + num2, 
+                                            + str(num2), 
                                         res, 
                                         TokenType.INT
                 )
@@ -190,7 +190,7 @@ class Parser(ParserHelper):
                 num1 = self.getTop().content
                 
                 res = int(num1) // int(num2)
-                newMultiplyToken = Token(num1 + " / " + num2, res, TokenType.INT)
+                newMultiplyToken = Token(str(num1) + " / " + str(num2), res, TokenType.INT)
                 self.stack.append(newMultiplyToken)
             
                 

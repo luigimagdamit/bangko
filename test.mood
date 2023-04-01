@@ -1,8 +1,18 @@
+
 num1 12 3 + :=
 num1 print!
 
 num2 15 :=
 num2 print!
 
-num2 num1 == <then hello! print! />
+( 12 3 * ) 36 == <then hello! print! />
 
+count 0 :=
+baddies [] :=
+
+0 10 <loop
+  count ( count 1 + ) :=
+  i ( count 1 - ) :=
+  i print!
+  baddies i push!
+/>
